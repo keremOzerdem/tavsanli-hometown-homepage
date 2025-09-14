@@ -85,12 +85,13 @@ h1, h2, h3, h4 {
 
 
 .activity {
-    width: 200px;
+    width: 300px;
 }
 
 .activity img {
-    border-radius: 50%;
-    width: 100px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
 }
 
 @media (max-width: 600px) {
