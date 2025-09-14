@@ -1,0 +1,125 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+
+.section {
+}
+
+/* HERO SECTION */
+
+#city-img-blur {
+    background-image: url("images/tavsanli.jpeg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero {
+    height: 500px;
+    background-image: url("images/tavsanli.jpeg");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    backdrop-filter: blur(5px);
+
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#city-suggest {
+    padding: 5px 12px;
+    border-radius: 10px;
+    background-color: #1D3557;
+}
+
+#city-desc {
+    width: 400px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: #457B9D;
+}
+
+/* ACTIVITIES SECTION */
+
+#activities-section {
+    background-color: #F1FAEE;
+    color: #1D3557;
+    padding: 50px;
+}
+
+#heading-activities {
+
+}
+
+.activities {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+
+.activity {
+    width: 200px;
+}
+
+.activity img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+    .activities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+    width: 100%;
+    max-width: 260px;         /* taşmayı engelle */
+  }
+}
+
+/* GUIDE SECTION */
+
+#my-guide {
+    width: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #A8DADC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#avatar-img {
+    width: 180px;
+    border-radius: 10px;
+}
